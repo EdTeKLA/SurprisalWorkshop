@@ -1,4 +1,4 @@
-INSTDIR=SurprisalWorkshop/incremental-top-down-parser
+INSTDIR=/content/SurprisalWorkshop/incremental-top-down-parser
 CC= gcc
 CFLAGS= -g $(INCLUDEDIRS)
 PARLIB= $(INSTDIR)/lib/libparse.a
