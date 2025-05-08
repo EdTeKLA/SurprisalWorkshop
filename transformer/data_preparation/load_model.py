@@ -18,18 +18,18 @@ import os
 from collections import defaultdict
 
 # Add your project functions path
-sys.path.append('/content/language_models/transformer/functions')
+sys.path.append('/content/SurprisalWorkshop/transformer/functions')
 
 from encoders import nwp_transformer  # make sure this function is defined there
 from prep_text import word_2_index
 
 # Argument parser
 parser = argparse.ArgumentParser(description='Get file name')
-parser.add_argument('-data_loc', type=str, default='/content/language_models/transformer/wiki_validation_pos.txt')
-parser.add_argument('-model_loc', type=str, default='/content/language_models/transformer/nwp_model_1_11711340')
+parser.add_argument('-data_loc', type=str, default='/content/SurprisalWorkshop/transformer/wiki_validation_pos.txt')
+parser.add_argument('-model_loc', type=str, default='/content/SurprisalWorkshop/transformer/nwp_model_1_11711340')
 parser.add_argument('-output_id', type=str, default='surprisal_output')
-parser.add_argument('-dict_loc', type=str, default='/content/language_models/transformer/wiki_train_word_pos_indices')
-parser.add_argument('-output_file', type=str, default='/content/language_models/transformer/surprisal_output.csv')
+parser.add_argument('-dict_loc', type=str, default='/content/SurprisalWorkshop/transformer/wiki_train_word_pos_indices')
+parser.add_argument('-output_file', type=str, default='/content/SurprisalWorkshop/transformer/surprisal_output.csv')
 args = parser.parse_args()
 
 # Set device to CPU
