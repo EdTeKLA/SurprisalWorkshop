@@ -1,0 +1,2 @@
+this/DT is/VBZ a/DT sentence/NN with/IN words/NNS in/IN it/PRP ./. 
+do/VBP not/RB all/DT sentences/NNS have/VB words/NNS in/IN them/PRP ?/.
